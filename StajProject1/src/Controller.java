@@ -42,7 +42,7 @@ public class Controller {
     JComboBox<String> City_coBox;
     //other fields
    
-    String name,,,,,,,,;
+    String name;
     String last_name;
     String father_name;
     String Student_id;
@@ -61,9 +61,11 @@ public class Controller {
     Integer year;
     Integer student_no;
     
-    
-    JMenuItem open_file,save_file,close_file;
-    
+    //MenuItems
+    JMenuItem open_file;
+    JMenuItem save_file;
+    JMenuItem close_file;
+        
     public Controller(){
           //buttons or other fields in view file
           this.Insert_button=this.view.getInsert_Button();
