@@ -107,5 +107,23 @@ CREATE TABLE Leagues
     insert into Sponser values(4,"ACM","Roza","Prize Sponsors");
     insert into Sponser values(5,"IEEE","Koldosh","Media Sponsors");
     
-    insert into Teams_Sponsers values(
+     insert into Teams_Sponsers (teamID,sponserID,donate_amount) Values(
+    (select teamID from Team where teamID=1),
+    (select sponserID from Sponser where sponserID=2),5000); 
+    
+   insert into Teams_Sponsers (teamID,sponserID,donate_amount) Values(
+    (select teamID from Team where teamID=2),
+    (select sponserID from Sponser where sponserID=2),5000); 
+    
+     insert into Teams_Sponsers (teamID,sponserID,donate_amount) Values(
+    (select teamID from Team where teamID=3),
+    (select sponserID from Sponser where sponserID=5),10000); 
+    
+     insert into Teams_Sponsers (teamID,sponserID,donate_amount) Values(
+    (select teamID from Team where teamID=4),
+    (select sponserID from Sponser where sponserID=2),15000); 
+    
+     insert into Teams_Sponsers (teamID,sponserID,donate_amount) Values(
+    (select teamID from Team where teamID=5),
+    (select sponserID from Sponser where sponserID=3),160000); 
     
